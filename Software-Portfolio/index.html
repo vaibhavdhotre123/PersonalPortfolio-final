@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="main">
+        <div class="div1">
+            <img src="vv.jpg" alt="">
+            <br>
+            <h3>Vaibhav Dhotre</h3>
+            <p>(Full Stack Software Developer)</p>
+            <br><br>
+
+            <hr style="width: 12rem; margin-left:1.3rem">
+            <br>
+            <ul>
+                <li><i class="ri-mail-unread-fill"></i> Email : vvaibhavdhotre@gmail.com</li>
+                <li><i class="ri-phone-fill"></i> Phone : 8767763597</li>
+                <li><i class="ri-map-pin-user-fill"></i> Location: Waluj Aurangabad</li>
+                <li><i class="ri-dislike-fill"></i> Hobbies: Development, DSA, Editing</li>
+            </ul>
+
+
+            <div class="box">
+                <div class="bx1"><a href="https://www.linkedin.com/in/vaibhav-dhotre-aba6a7252/"><i class="ri-linkedin-box-fill"></i></a></div>
+                <div class="bx1"><a href="https://github.com/vaibhavdhotre123"><i class="ri-github-fill"></i></a></div>
+                <div class="bx1"><i class="ri-twitter-fill"></i></div>
+            </div>
+
+            <!-- <button><a href=""></a>Get in Touch <i class="ri-friendica-fill"></i></button> -->
+            <button style="padding: 1rem; color: black;" class="open-btn" onclick="openForm()">Get in Touch</button>
+
+        </div>
+        <div class="div2">
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills </a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <br>
+                <hr>
+            </div>
+            <br>
+            <h3>About Me:</h3>
+            <br>
+            <p>Hello I am Vaibhav Dhotre Currently Percuing BCA From NSBT ( CHHATRAPATI SAMBHAJINAGAR), I like to
+                Develop full Fuldged Applications and Apps, Loved to Explore New things and Passionated about the Cloud
+                Computing and Cyber Security Domain, I like working with the Like Minded Peoples and Strong Interest in
+                Enterprenurship Skills and Editing.</p>
+            <br>
+            <br>
+            <br>
+            <h3>My Passion (Works Matters)</h3>
+
+            <div class="boxex">
+
+                <div class="box">
+                    <div class="class">
+                        <img src="developer_5044785.png" alt="">
+                        <h3>Web Developemt</h3>
+                    </div>
+                    <br>
+                    <h6>I am Quite profeccient in Web Developemt, I like to Build Saas Based Platform and MObile Apps, I
+                        make real based application which can create impact for the Society.</h6>
+                    <br>
+
+                    <i class="ri-github-fill"> <a href="https://github.com/vaibhavdhotre123/Projects"> Github Profile</i></a>
+                </div>
+
+                <div class="box">
+                    <div class="class">
+                        <img  src="android.png" alt=""> <br>
+                        <h3>Android Developemt</h3>
+                    </div>
+                    <br>
+                    <h6>I Liked to Build App and Scale it, Working with Kotlin and Android Studio Editor and APIs.</h6><br>
+                    <i class="ri-github-fill"> <a href="https://github.com/vaibhavdhotre123/Projects"> Github Profile</i></a>
+                </div>
+                <div class="box">
+                    <div class="class">
+                        <img style="width: 2rem;" src="AWS.png" alt=""> <br>
+                        <h3> AWS/Cyber-Security</h3>
+                    </div>
+                    <br>
+                    <h6>I Loved to Work with Cloud and Cyber-Security Roles, Enhancing My Knowledge In Problem Solving
+                        Skills.</h6>
+                        <br>
+                        <i class="ri-github-fill"> <a href="https://github.com/vaibhavdhotre123"> Github Profile</i></a>
+
+                </div>
+                <div class="box">
+                    <div class="class">
+                        <img src="editing.png" alt="">
+                        <h3>Editing (Premeir PRo)</h3>
+                    </div>
+                    
+                    <br>
+                    <h6> I do this as a HObbie, In MY Free time I Do This .</h6>
+                    <br> 
+                    <i class="ri-github-fill"> <a style="list-style-type: none;" href="https://github.com/vaibhavdhotre123"> Github Profile</i></a>
+
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+
+    </div>
+
+    <style>
+        /* General styling */
+  
+
+        /* Button styling */
+        .open-btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Pop-up form styling */
+        .popup-form {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: top 0.5s ease-in-out;
+            z-index: 1000;
+            border-radius: 10px;
+        }
+
+        .popup-form.active {
+            top: 20px;
+        }
+
+        .popup-form h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .popup-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .popup-form input, .popup-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .popup-form .submit-btn {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .popup-form .submit-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Overlay background when the form is active */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Button to open the form -->
+   
+    <!-- Pop-up form -->
+    <div class="popup-form" id="popupForm">
+        <h2>It's Nigaa style</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Put Your Name Buddy" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"   placeholder="Put Your Email yaar" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Drop your Message Secretely" required></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+        // Function to open the form
+        function openForm() {
+            document.getElementById("popupForm").classList.add("active");
+            document.getElementById("overlay").classList.add("active");
+        }
+
+        // Close the form if the user clicks outside the form (on the overlay)
+        document.getElementById("overlay").addEventListener("click", function() {
+            document.getElementById("popupForm").classList.remove("active");
+            document.getElementById("overlay").classList.remove("active");
+        });
+    </script>
+
+</body>
+</html>
+
+
+</body>
+
+</html>

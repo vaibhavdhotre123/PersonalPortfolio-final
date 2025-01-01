@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  background-color: #222;
+  overflow-x: hidden;
+}
+
+#main {
+  display: flex;
+justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.div1 {
+  width: 21vw;
+
+  padding: 1rem;
+  background-color: #cfc5c7;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.div1 img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.div1 h3 {
+  margin-top: 1rem;
+}
+
+.div1 ul {
+  list-style: none;
+  padding: 1rem 0;
+align-items: flex-start;
+}
+
+.div1 ul li {
+  margin: 1rem 0;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.bx1 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.bx1:hover {
+  color: aqua;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  background-color: #b4b297;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9fa76e;
+  transform: scale(1.05);
+}
+
+.div2 {
+  flex: 1;
+  padding: 2rem;
+  background-color: #b9d3d1;
+  border-radius: 20px;
+  width: 43vw;
+  max-width: 800px;
+  text-align: center;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  padding: 0.5rem 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar ul li:hover {
+  background-color: rgb(200, 133, 197);
+  border-radius: 10px;
+}
+
+.bracket {
+  margin: 2rem 0;
+}
+
+.bo {
+  display: inline-block;
+  text-align: center;
+  margin: 1rem;
+}
+
+.bo img {
+  width: 100px;
+  height: auto;
+}
+
+.kite .box {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #d8d5ce;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  #main {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .div1 {
+      width: 100%;
+      margin: 1rem auto;
+  }
+
+  .div2 {
+      width: 90%;
+      margin: 1rem auto;
+      padding: 1rem;
+  }
+
+  .navbar ul {
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+
+  .navbar ul li {
+      margin-bottom: 0.5rem;
+  }
+
+  .bo img {
+      width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .div1 {
+      width: 100%;
+  }
+
+  .div2 {
+      width: 100%;
+  }
+
+  button {
+      width: 100%;
+      margin-top: 1rem;
+  }
+
+  .bo img {
+      width: 60px;
+  }
+}
